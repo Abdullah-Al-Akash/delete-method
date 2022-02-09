@@ -1,0 +1,25 @@
+.input-area {
+        border: 3px solid green;
+}
+
+#input-area {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+}
+
+#delete-btn {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+}
+
+@media screen and (min-width: 700px) {
+        #delete-field {
+                width: 75%;
+        }
+}
+
+@media screen and (min-width: 800px) {
+        #delete-field {
+                width: 30%;
+        }
+}

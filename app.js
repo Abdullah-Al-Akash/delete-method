@@ -1,5 +1,4 @@
 const deleteField = document.getElementById('input-area');
-const deleteText = deleteField.value;
 const name = document.getElementById('name');
 
 // Catch Deleted text:
@@ -9,16 +8,17 @@ deleteField.addEventListener("change", function () {
 deleteField.addEventListener("keyup", function () {
         deleteValidation();
 })
+
+const deleteBtn = document.getElementById('delete-btn');
 // Condition For Delete Button:
-deleteBtn.setAttribute("disabled", true);
 function deleteValidation() {
-        const deleteBtn = document.getElementById('delete-btn');
+        const deleteText = deleteField.value;
         if (deleteText == 'delete') {
-                deleteBtn.removeAttribute("disabled", true);
+                deleteBtn.removeAttribute("disabled");
         }
-        // else {
-        //         deleteBtn.setAttribute("disabled", true);
-        // }
+        else {
+                deleteBtn.setAttribute("disabled", true);
+        }
 }
 // Delete Button:
 deleteBtn.addEventListener("click", function () {

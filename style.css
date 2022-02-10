@@ -2,12 +2,12 @@
         border: 3px solid green;
 }
 
-#input-area {
+#input-area, #sobji-input {
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
 }
 
-#delete-btn {
+#delete-btn, #sobji-add {
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
 }
